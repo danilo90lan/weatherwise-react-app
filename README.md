@@ -12,6 +12,17 @@ The goal of this project was to build a responsive frontend application that con
 
 ---
 
+## Features
+
+- **Current Conditions**: Displays current temperature, humidity, wind speed, and weather conditions with intuitive icons.
+- **Hourly Forecast**: Hour-by-hour forecast for the current day to help plan your day.
+- **Daily Forecast**: 7-day forecast with high and low temperatures, precipitation chances, and condition icons.
+- **Location Search**: Search and save your favorite locations for quick access.
+- **Local Storage**: Saves cities locally without the need for a database.
+- **Default Behavior**:
+  - Auto-detects location based on IP or precise location with permission.
+---
+
 ## 🛠️ Tech Stack
 
 - React (JavaScript)
@@ -23,18 +34,81 @@ The goal of this project was to build a responsive frontend application that con
 
 ---
 
-## ✨ Features
+## Cards
 
-- Search weather by city name
-- Display current weather conditions
-- Hourly forecast view
-- 7-day forecast view
-- Save searched cities using LocalStorage
-- Responsive design
-- Dynamic UI updates based on API data
-- Loading and error handling states
-
+- **Glance Cards**:
+  - Weather icon
+  - Location name and country
+  - Weather condition (e.g., Partly Cloudy, Clear)
+  - Temperature (Celsius)
 ---
+
+### City Card
+![alt text](./docs/city-card.png)
+- Displays glanceable weather information for a city
+
+### Day Card
+
+![alt text](./docs/day-card.png)
+- Showcases the daily forecast
+
+### Hour Card
+
+![alt text](./docs/hour-card.png)
+
+- Showcases the current conditions or a forecast for a specific hour
+
+Includes:
+
+- Current or high temperature
+- Precipitation chances
+- Condition icons
+
+
+### Hourly Forecast
+![alt text](./docs/hourly-forecast.png)
+
+- A list of Hour Cards for the current day
+
+
+### Seven Day Forecast
+
+![alt text](./docs/seven-day-forecast.png)
+
+- A list of Day Cards for today and the next 6 days
+
+## Pages
+
+### Home
+
+- Displays the search bar and closest city.
+- Displays current weather conditions using a City Card.
+- Displays search results as City Cards.
+
+### Details
+
+- Provides comprehensive weather information for a selected location.
+
+Includes:
+
+- Location name
+- Weather condition with icon
+- Temperature
+- Feels like temperature
+- High & low temperatures
+- Hourly and future forecasts
+- Precipitation chance
+- Wind speed
+- Sunrise & sunset times
+- UV Index
+- Humidity & dew point
+- Pressure (inHg)
+
+
+### Saved Cities
+
+- Allows users to view and manage their saved locations.
+- Users can then navigate to the details page for any saved location.
 
 ## 🧠 Technical Highlights
 
